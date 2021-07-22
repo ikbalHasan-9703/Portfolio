@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+ul{
+ list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+.navber{
+    width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+    background: transparent;
+    padding: 15px 0;
+    transition: .4s;
+    z-index: 9999;
+}
+.navber.sticky{
+    background: crimson;
+    padding-bottom: 8px ;
+    
+}
+.navber.sticky .logo a span{
+    color: white;
+}
+.navber .container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.navber .logo a{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    margin-top: -6px;
+    
+}
+.navber .logo a span{
+    color: crimson;
+}
+.navber .menu li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.navber .menu li a{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    transition: .4s;
+
+    
+}
+.navber .menu li a:hover{
+    color: crimson;
+}
+.navber.sticky .menu li a:hover{
+    color: white;
+}
+
+
+
+
+.home{
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+   padding: 400px 0;
+    object-fit: cover;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 35%;
+    
+    color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content .text1{
+    font-size: 27px;
+    font-weight: 400;
+    color: white;
+}
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: 600;
+    color: white;
+    margin-left: -3px;
+}
+.home .home-content .text3{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    margin: 3px 0;
+}
+.home .home-content .text3 span{
+    color: crimson;
+}
+.home .home-content a{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    background: crimson;
+    border:2px solid crimson;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 31px;
+    transition: .4s;
+}
+.home .home-content a:hover{
+    background: transparent;
+}
+
+.about{
+    margin: 41px;
+    font-family: 'poppins',sans-serif;
+}
+.about .title{
+    margin-bottom: 127px;
+}
+.about .title h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    color: black;
+}
+.about .title h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+   
+    transform: translateX(-50%);
+    width: 180px;
+    height: 3px;
+    background: crimson;;
+}
+.about .title h1::after{
+    content: "who i am ?";
+    position: absolute;
+   
+    left: 50%;
+    bottom:-19px;
+    transform: translateX(-50%);
+    padding: 0 4px;
+    background: crimson;
+    font-size: 18px;
+    color: crimson;
+    background: white;
+    
+}
+.about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    width: 400px;
+    height: 400px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right h4{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.about .about-content .right h4 span{
+    color: crimson;
+}
+.about .about-content .right p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 20px 0;
+}
+.about .about-content .right a{
+    color: white;
+    background: crimson;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 3px solid crimson;
+}
+.about .about-content .right a:hover{
+    background: transparent;
+    color: crimson;
+}
+
+
+
+
+.survices{
+    padding: 41px;
+    font-family: 'poppins',sans-serif;
+    background: #222;
+}
+.survices .title{
+    margin-bottom: 127px;
+}
+.survices .title h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    color: white;
+}
+.survices .title h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+   
+    transform: translateX(-50%);
+    width: 180px;
+    height: 3px;
+    background: white;;
+}
+.survices .title h1::after{
+    content: "what i provite ?";
+    position: absolute;
+   
+    left: 50%;
+    bottom:-19px;
+    transform: translateX(-50%);
+    padding: 0 4px;
+    background: crimson;
+    font-size: 18px;
+    color: crimson;
+    background: #222;
+    
+}
+.survices .survices-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.survices .survices-content .card{
+    width: 32%;
+    
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+    
+}
+.survices .survices-content .card .box{
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+ 
+  
+}
+.survices .survices-content .card .box:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.survices .survices-content .card .box i{
+  
+    font-size: 57px;
+    padding-top: 28px;
+    color: crimson;
+    
+    
+
+}
+.survices .survices-content .card:hover{
+    
+    
+background: crimson;
+color: white;
+}
+.survices .survices-content .card:hover i{
+
+color: white;
+}
+
+.survices .survices-content .card:hover .box h2{
+
+color: white;
+}
+.survices .survices-content .card .box h2{
+    font-size: 34px;
+    padding-top: 20px;
+    color: crimson;
+}
+.survices .survices-content .card .box p{
+    text-align: justify;
+    margin: 8px 28px;
+    padding-bottom: 23px;
+}
+
+
+
+
+
+
+.skills {
+    padding: 41px;
+    font-family: 'poppins',sans-serif;
+    background: white;
+}
+.skills  .title{
+    margin-bottom: 127px;
+}
+.skills  .title h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    color: black;
+}
+.skills  .title h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+   
+    transform: translateX(-50%);
+    width: 180px;
+    height: 3px;
+    background: black;;
+}
+.skills .title h1::after{
+    content: "what i provite ?";
+    position: absolute;
+   
+    left: 50%;
+    bottom:-19px;
+    transform: translateX(-50%);
+    padding: 0 4px;
+    background: crimson;
+    font-size: 18px;
+    color: crimson;
+    background: white;
+    
+}
+
+.skills .skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills  .skills-content .left{
+    width: 50%;
+}
+.skills  .skills-content .left h2{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills  .skills-content .left p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 32px 0;
+    /* margin-left: -20px; */
+    margin-right: 35px;
+}
+.skills  .skills-content .left a{
+    color: white;
+    background: crimson;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 3px 28px;
+    border-radius: 6px;
+    border: 3px solid crimson;
+    transition: .4s;
+}
+.skills  .skills-content .left a:hover{
+    border: 3px solid black;
+    color: black;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    border-bottom-right-radius: 79px;
+    border-top-left-radius: 79px;
+    transform: scale(1.2);
+}
+.skills  .skills-content .right{
+    width: 48%;
+}
+.skills  .skills-content .right .progressbar-item .progress-title{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+
+
+.teams{
+    padding: 41px;
+    font-family: 'poppins',sans-serif;
+    background: #111;
+   
+}
+.title{
+    margin-bottom: 127px;
+}
+ .title h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    color: white;
+}
+ .title h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+   
+    transform: translateX(-50%);
+    width: 180px;
+    height: 3px;
+    background: white;;
+}
+ .teams .title h1::after{
+    content: "members";
+    position: absolute;
+   
+    left: 50%;
+    bottom:-19px;
+    transform: translateX(-50%);
+    padding: 0 4px;
+    background: crimson;
+    font-size: 18px;
+    color: crimson;
+    background: #111;
+    
+}
+
+.teams .banner{
+    height: 350px;
+    background: #222;
+    margin-left: 30px;
+    position: relative;
+    border-radius: 6px;
+    transition: .4s;
+    border: 1px solid rgb(184, 68, 91) ;
+}
+.teams .banner:hover{
+    background: crimson;
+    border: 1px solid white;
+}
+.teams .banner img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 28px;
+    left: 34%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+.teams .banner h1{
+   position: absolute;
+   bottom: 75px;
+   left: 145px;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 25px;
+   font-weight: 500;
+   color: white;
+}
+.teams .banner p{
+   position: absolute;
+   bottom: 39px;
+   left: 51px;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   color: white;
+}
+
+
+.prev{
+    width: 30px;
+    position: absolute;
+    height: 30px;
+    background: crimson;
+    color:black;
+   text-align: center;
+    border-radius: 50%;
+    top: 49%;
+    left: 16px;
+    transform: translateY(-50%);
+    z-index: 1;
+    line-height: 30px;
+    transition: .4s;
+    font-size: 18px;
+}
+.prev:hover{
+    background: white;
+    color:black;
+}
+.next{
+    width: 30px;
+    position: absolute;
+    height: 30px;
+    background: crimson;
+    color:black;
+   text-align: center;
+    border-radius: 50%;
+    top: 49%;
+    right: -16px;
+    transform: translateY(-50%);
+    line-height: 30px;
+    transition: .4s;
+    font-size: 18px;
+}
+.next:hover{
+    background: white;
+    color:black;
+}
+
+
+.contact{
+    padding: 41px;
+    font-family: 'poppins',sans-serif;
+    background: white;
+   
+}
+
+.contact{
+    margin-bottom: 9px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    color: black;
+}
+.contact h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+   
+    transform: translateX(-50%);
+    width: 180px;
+    height: 3px;
+    background: black;;
+}
+.contact .title h1::after{
+    content: "get in touch";
+    position: absolute;
+   
+    left: 50%;
+    bottom:-19px;
+    transform: translateX(-50%);
+    padding: 0 4px;
+    background: crimson;
+    font-size: 18px;
+    color: crimson;
+    background: white;
+    
+}
+.contact .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    ;
+}
+.contact .contact-content .left{
+    width: 48%;
+   
+    position: relative;
+    
+    
+}
+.contact .contact-content .left h2{
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+   
+}
+.contact .contact-content .left span i{
+    display: block;
+    margin-top: 30px;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 11px;
+    color: crimson;
+    
+
+}
+.contact .contact-content .left span h4{
+    margin-left: 64px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+   
+
+}
+.contact .contact-content .left  p{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Ubuntu',sans-serif;
+    margin: 20px 0;
+    line-height: 27px;
+    
+}
+.contact .contact-content .left span h5{
+    margin-left: 64px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+   
+
+}
+
+
+.contact .contact-content .right{
+    width: 50%;
+   
+   
+}
+.contact .contact-content .right input{
+    padding: 8px 23px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border-radius: 6px;
+    margin-top: 13px;
+    transition: .6s;
+    overflow: hidden;
+    color: black;
+    width: 605px;
+}
+
+
+
+.contact .contact-content .right input:hover{
+    border: 3px solid black;
+    color: black;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    border-bottom-right-radius: 47px;
+    border-top-left-radius: 47px;
+    transform: scale(1.1);
+
+}
+::-webkit-input-placeholder{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+w
+.contact .contact-content .right .three{
+    
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border-radius: 6px;
+   
+    margin: 11px 0;
+    width: 87%;
+}
+.contact .contact-content .right #text{
+    
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 87%;
+    padding: 19px 41px;
+    height: 53px;
+    transition: .4s;
+    overflow: hidden;
+}
+.contact .contact-content .right #text:hover{
+    border: 3px solid black;
+    color: black;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    border-bottom-right-radius: 79px;
+    border-top-left-radius: 79px;
+    transform: scale(1.1);
+    
+}
+.contact .contact-content .right P{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    margin-bottom: 3px;
+    margin-top: -14px;
+}
+.contact .contact-content .right .last a{
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 5px;
+    transition: .4s;
+    
+    overflow: hidden;
+}
+.contact .contact-content .right .last a:hover{
+    border: 3px solid black;
+    color: black;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    border-bottom-right-radius: 79px;
+    border-top-left-radius: 79px;
+    transform: scale(1.2);
+}
+.copyright{
+    width: 100%;
+    padding: 10px 0;
+    background: #acafb4;
+    text-align: center;
+}
+.copyright p{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+.copyright p span{
+    color: crimson;
+}
